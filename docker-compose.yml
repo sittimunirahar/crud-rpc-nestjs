@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: crn-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user1
+      - POSTGRES_PASSWORD=password1
+      - POSTGRES_DB="crud-rpc-nestjs"
+  rabbitmq:
+    container_name: crn-rabbitmq
+    image: rabbitmq:latest
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER="user"
+      - RABBITMQ_DEFAULT_PASS="password"
