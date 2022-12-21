@@ -27,8 +27,8 @@ More on Docker Compose format: https://docs.docker.com/compose/compose-file/
 
 1. Set the DATABASE_URL in the .env file to point to your existing database.
 2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
-3. Run ```bash prisma db pull``` to turn your database schema into a Prisma schema.
-4. Run ```bash prisma generate``` to generate the Prisma Client. You can then start querying your database.
+3. Run ```prisma db pull``` to turn your database schema into a Prisma schema.
+4. Run ```prisma generate``` to generate the Prisma Client. You can then start querying your database.
 
 More info on nestjs database setup: https://docs.nestjs.com/techniques/database 
 
