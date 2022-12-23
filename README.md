@@ -26,10 +26,17 @@ More on Docker Compose format: https://docs.docker.com/compose/compose-file/
 5. Create rabbitMQ user on Docker CLI
 
 ```bash
-rabbitmqctl add_user user password
-rabbitmqctl set_user_tags user administrator
-rabbitmqctl set_permissions -p / user ".*" ".*" ".*"
+$ rabbitmqctl add_user user password
 ```
+
+```bash
+$ rabbitmqctl set_user_tags user administrator
+```
+
+```bash
+$ rabbitmqctl set_permissions -p / user ".*" ".*" ".*"
+```
+
 ## Prisma Setup
 
 1. Set the DATABASE_URL in the .env file to point to your existing database.
@@ -66,4 +73,5 @@ $ npm run test:cov
 ```
 ## Author
 Sitti Munirah Abdul Razak
+
 Software Engineer
