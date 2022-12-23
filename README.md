@@ -21,6 +21,7 @@ $ docker compose up
 ```
 
 More on Docker compose: https://docs.docker.com/get-started/08_using_compose/ 
+
 More on Docker Compose format: https://docs.docker.com/compose/compose-file/ 
 
 5. Create rabbitMQ user on Docker CLI
